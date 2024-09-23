@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="base-url" content="/src/" />
+  <title>القرآن الكريم</title>
+  <script>
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  </script>
+  <script type="module" crossorigin src="/assets/index-BqTUEpmq.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-Ca2TRJCe.css">
+</head>
+
+<body class="bg-gray-100 border-gray-200 dark:bg-gray-900">
+  <div id="app"></div>
+</body>
+
+</html>
